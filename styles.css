@@ -108,3 +108,25 @@ body{background:var(--bg)}
 @media(max-width:850px){.hero{padding:100px 24px 90px}.hero-inner{grid-template-columns:minmax(0,1fr) minmax(240px,.75fr);gap:26px}.hero-copy{transform:translateY(-20px)}.hero h1{font-size:clamp(40px,5.2vw,55px)}.hero-photo-wrap{width:min(100%,345px)!important}.hero-visual:before{width:min(105%,370px)}}
 @media(max-width:650px){.nav-links{background:#172746;border-color:#384b78}.nav-links a{color:#e0e8f8}.hero{padding:85px 22px 95px;min-height:0}.hero-inner{grid-template-columns:1fr;gap:46px}.hero-copy{transform:none}.hero h1{font-size:clamp(40px,10vw,56px);margin-bottom:23px}.hero-title{margin-bottom:24px}.hero-visual{justify-content:center}.hero-photo-wrap{width:min(84vw,320px)!important;aspect-ratio:1!important;border-radius:50%!important}.hero-visual:before{width:min(92vw,350px)}}
 @media(prefers-reduced-motion:reduce){.hero-visual:before{animation:none}.hero-photo-wrap:hover{transform:none}.animate-in{opacity:1;transform:none;transition:none}}
+
+/* Unified deep-blue visual system across every portfolio section */
+:root{--bg:#111d39;--surface:#1a2b4d;--tint:#152543;--ink:#f1f6ff;--muted:#c0cee3;--line:#354a72;--accent:#a8caff;--accent-soft:#273e68}
+html,body{background:var(--bg);color:var(--ink)}
+.site-header{background:#101a34f5;border-color:#364b71}
+.content-section,.contact-section{background:var(--bg);color:var(--ink)}
+.tinted{background:linear-gradient(135deg,#142540 0%,#1a2c52 100%);color:var(--ink)}
+.section-intro h2,.experience-head h3,.project-card h3,.skill-group h3{color:#f3f7ff}
+.section-intro p,.experience-details>p:not(.job-role),.responsibility-list,.project-card p,.project-note,.skill-group p,.contact-section .section-intro p{color:#c5d2e7}
+.eyebrow,.experience-date,.job-role,.project-index span,.details-button,.contact-item>span:first-child,.contact-arrow{color:#a4c8ff}
+.experience-item,.experience-list,.contact-section,.site-footer{border-color:#385078}
+.industry{background:#243a5c;border-color:#41587c;color:#dce8fa}
+.tag-list span{background:#30466e;color:#d9e8ff}
+.project-card,.contact-item{background:#203354;border:1px solid #38537a;box-shadow:0 9px 26px #020b1e37}
+.project-card:hover,.contact-item:hover{border-color:#90b7f3;box-shadow:0 20px 40px #020b1e5c}
+.project-card .project-details{border-color:#435878;color:#c8d7eb}
+.skill-group{border-color:#6484b8}
+.responsibility-list li::marker{color:#a7caff}
+.site-footer,.site-footer a{color:#c1cfe3}
+.contact-item strong{color:#f4f8ff}
+.contact-item:hover .contact-arrow,.details-button:hover{color:#e3f0ff}
+.nav-links a{color:#d2ddf3}.nav-links a:hover,.nav-links a.active{color:#b6d8ff}
