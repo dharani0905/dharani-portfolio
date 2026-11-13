@@ -1,0 +1,10 @@
+const root=document.body;
+const theme=document.querySelector('#theme');
+theme.addEventListener('click',()=>{root.classList.toggle('light');theme.setAttribute('aria-label',root.classList.contains('light')?'Switch to dark theme':'Switch to light theme')});
+const menu=document.querySelector('#menu'),nav=document.querySelector('.nav nav');
+menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open))});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');observer.unobserve(e.target)}}),{threshold:.09});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+document.querySelectorAll('.project-more').forEach(button=>button.addEventListener('click',()=>{const details=button.nextElementSibling;const expanded=button.getAttribute('aria-expanded')==='true';details.hidden=expanded;button.setAttribute('aria-expanded',String(!expanded));button.textContent=expanded?'View highlights +':'Hide highlights −'}));
+document.querySelector('#year').textContent=new Date().getFullYear();
