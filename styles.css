@@ -32,3 +32,34 @@
  .hero-visual{justify-content:center}
  .hero-photo-wrap{width:min(100%,340px);aspect-ratio:4/4.5;margin:0}
 }
+
+/* Elegant portfolio finishing touches — midnight navy, antique gold and sea blue */
+:root{--bg:#f7f8fb;--surface:#fff;--tint:#edf2f7;--ink:#14253b;--muted:#536477;--line:#dbe3ec;--accent:#1f5678;--accent-soft:#e8f0f6;--gold:#b4874f}
+body{background:var(--bg)}
+.site-header{background:#fffffff0;box-shadow:0 2px 15px #1e38500a}
+.brand span{color:var(--accent)}
+.hero{position:relative;overflow:hidden;background:linear-gradient(118deg,#f9fbff 6%,#f3f6fa 64%,#e8eef7 100%);padding-top:62px;padding-bottom:110px}
+.hero:before{content:"";position:absolute;width:650px;height:650px;right:-270px;top:-350px;border-radius:50%;background:radial-gradient(circle,#c5d9e788,transparent 70%);pointer-events:none}
+.hero-inner{position:relative;z-index:1}
+.hero-copy{transform:translateY(-18px)}
+.hero h1{margin:0 0 29px;font-size:clamp(43px,4.6vw,68px);letter-spacing:-.05em;line-height:1.15}
+.hero-title{margin:0 0 29px;color:var(--accent);font-weight:700}
+.hero-description{line-height:1.9;max-width:650px}
+.hero-photo-wrap{width:min(100%,400px);aspect-ratio:1/1;border-radius:50%;border:9px solid #ffffff;outline:1px solid #cbd9e6;box-shadow:0 22px 65px #153e631f,0 5px 15px #21384e12;position:relative}
+.hero-photo{object-fit:cover;object-position:center 28%}
+.hero-visual{position:relative}
+.hero-visual:before{content:"";position:absolute;width:min(112%,455px);aspect-ratio:1;border:1px solid #b5c9da75;border-radius:50%;pointer-events:none}
+.button-primary{background:var(--ink);border-color:var(--ink)}.button-primary:hover{background:var(--accent)}
+.button-outline{border-color:#bdccdc}.button-outline:hover{background:#dbeaf6}
+.eyebrow{color:var(--accent)}
+.experience-date,.job-role,.project-index span,.details-button,.contact-item>span:first-child,.contact-arrow,.skill-group-num{color:var(--accent)}
+.tag-list span{background:#eaf1f7;color:#255578}
+.skill-group{border-top-color:#bfd0df}
+.contact-item,.project-card{box-shadow:0 8px 22px #152c4310}
+.contact-item:hover,.project-card:hover{box-shadow:0 17px 32px #152c431b}
+.contact-email .email-actions{display:flex;align-items:center;flex-wrap:wrap;gap:7px 15px;margin-top:19px}
+.email-actions a,.email-actions button{font-size:12px;font-weight:700;color:var(--accent);background:none;border:0;padding:4px 0;text-decoration:underline;text-underline-offset:3px}
+.email-actions .email-action-primary{color:var(--ink)}
+.email-feedback{font-size:11px!important;color:var(--accent)!important;margin-top:6px;min-height:1em}
+@media(max-width:850px){.hero{padding-top:88px;padding-bottom:94px}.hero h1{font-size:clamp(38px,5vw,55px)}.hero-photo-wrap{width:min(100%,350px)}.hero-visual:before{width:100%}}
+@media(max-width:650px){.hero{padding:75px 22px 85px}.hero-copy{transform:none}.hero h1{margin-bottom:23px;font-size:clamp(40px,9vw,55px)}.hero-title{margin-bottom:23px}.hero-photo-wrap{width:min(87%,320px);aspect-ratio:1/1;margin:0}.hero-visual:before{width:min(96%,345px)}}
