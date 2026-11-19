@@ -1,6 +1,6 @@
 # Dharani Vanukuri — Software Developer Portfolio
 
-**Live portfolio:** https://dharani0905.github.io/dharani-portfolio/
+**Live portfolio:** https://vdhara920.github.io/dharani-portfolio/
 
 This is the official GitHub Pages link. Use it directly in LinkedIn, resumes, and applications without any `utm_source` parameters.
 
@@ -19,4 +19,4 @@ The main entry point is `index.html`. The stylesheet `styles.css` and script `sc
 
 ## Site URL
 
-https://dharani0905.github.io/dharani-portfolio/
+https://vdhara920.github.io/dharani-portfolio/
